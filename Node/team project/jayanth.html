@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .attendance {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 400px;
+        }
+
+        .attendance h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .student {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .student label {
+            flex: 1;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .attendance-checkbox {
+            width: 20px;
+            height: 20px;
+        }
+
+        #submit-button, #edit-button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 15px;
+            margin-top: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #submit-button:hover, #edit-button:hover {
+            background-color: #0056b3;
+        }
+
+        #absent-list {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .absent-student {
+            margin-bottom: 5px;
+        }
+
+        .absent-count {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="attendance">
+        <h1>Attendance Form</h1>
+        <h3><center>ECE - C</center></h3>
+        <div class="student">
+            <label for="student1">21PA1A04C7</label>
+            <input type="checkbox" id="4C7" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student2">21PA1A04C8</label>
+            <input type="checkbox" id="4C8" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student3">21PA1A04C9</label>
+            <input type="checkbox" id="4C9" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student4">21PA1A04D0</label>
+            <input type="checkbox" id="4D0" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student5">21PA1A04D1</label>
+            <input type="checkbox" id="4D1" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student6">21PA1A04D2</label>
+            <input type="checkbox" id="4D2" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student7">21PA1A04D3</label>
+            <input type="checkbox" id="4D3" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student8">21PA1A04D4</label>
+            <input type="checkbox" id="4D4" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student9">21PA1A04D5</label>
+            <input type="checkbox" id="4D5" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student10">21PA1A04D6</label>
+            <input type="checkbox" id="4D6" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student11">21PA1A04D7</label>
+            <input type="checkbox" id="4D7" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student12">21PA1A04D8</label>
+            <input type="checkbox" id="4D8" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student13">21PA1A04D9</label>
+            <input type="checkbox" id="4D9" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student14">21PA1A04E0</label>
+            <input type="checkbox" id="4E0" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student15">21PA1A04E1</label>
+            <input type="checkbox" id="4E1" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student16">21PA1A04E2</label>
+            <input type="checkbox" id="4E2" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student17">21PA1A04E3</label>
+            <input type="checkbox" id="4E3" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student18">21PA1A04E4</label>
+            <input type="checkbox" id="4E4" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student19">21PA1A04E5</label>
+            <input type="checkbox" id="4E5" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student20">21PA1A04E6</label>
+            <input type="checkbox" id="4E6" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student21">21PA1A04E7</label>
+            <input type="checkbox" id="4E7" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student22">21PA1A04E8</label>
+            <input type="checkbox" id="4E8" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student23">21PA1A04E9</label>
+            <input type="checkbox" id="4E9" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student24">21PA1A04F0</label>
+            <input type="checkbox" id="4F0" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student25">21PA1A04F1</label>
+            <input type="checkbox" id="4F1" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student26">21PA1A04F2</label>
+            <input type="checkbox" id="4F2" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student27">21PA1A04F3</label>
+            <input type="checkbox" id="4F3" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student28">21PA1A04F4</label>
+            <input type="checkbox" id="4F4" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student29">21PA1A04F5</label>
+            <input type="checkbox" id="4F5" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student30">21PA1A04F6</label>
+            <input type="checkbox" id="4F6" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student31">21PA1A04F7</label>
+            <input type="checkbox" id="4F7" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student32">21PA1A04F8</label>
+            <input type="checkbox" id="4F8" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student33">21PA1A04F9</label>
+            <input type="checkbox" id="4F9" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student34">21PA1A04G0</label>
+            <input type="checkbox" id="4G0" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student35">21PA1A04G1</label>
+            <input type="checkbox" id="4G1" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student36">21PA1A04G2</label>
+            <input type="checkbox" id="4G2" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student37">21PA1A04G3</label>
+            <input type="checkbox" id="4G3" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student38">21PA1A04G4</label>
+            <input type="checkbox" id="4G4" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student39">21PA1A04G5</label>
+            <input type="checkbox" id="4G5" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student40">21PA1A04G6</label>
+            <input type="checkbox" id="4G6" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student41">21PA1A04G7</label>
+            <input type="checkbox" id="4G7" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student42">21PA1A04G8</label>
+            <input type="checkbox" id="4G8" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student43">21PA1A04G9</label>
+            <input type="checkbox" id="4G9" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student44">21PA1A04H0</label>
+            <input type="checkbox" id="4H0" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student45">21PA1A04H1</label>
+            <input type="checkbox" id="4H1" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student46">21PA1A04H2</label>
+            <input type="checkbox" id="4H2" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student47">21PA1A04H3</label>
+            <input type="checkbox" id="4H3" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student48">21PA1A04H4</label>
+            <input type="checkbox" id="4H4" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student49">21PA1A04H5</label>
+            <input type="checkbox" id="4H5" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student50">21PA1A04H6</label>
+            <input type="checkbox" id="4H6" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student51">21PA1A04H7</label>
+            <input type="checkbox" id="4H7" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student52">21PA1A04H8</label>
+            <input type="checkbox" id="4H8" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student53">21PA1A04H9</label>
+            <input type="checkbox" id="4H9" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student54">21PA1A04I0</label>
+            <input type="checkbox" id="4I0" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student55">21PA1A04I1</label>
+            <input type="checkbox" id="4I1" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student56">21PA1A04I2</label>
+            <input type="checkbox" id="4I2" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student57">21PA1A04I3</label>
+            <input type="checkbox" id="4I3" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student58">21PA1A04I4</label>
+            <input type="checkbox" id="4I4" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student59">21PA1A04I5</label>
+            <input type="checkbox" id="4I5" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student60">21PA1A04I6</label>
+            <input type="checkbox" id="4I6" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student61">21PA1A04I7</label>
+            <input type="checkbox" id="4I7" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student62">21PA1A04I8</label>
+            <input type="checkbox" id="4I8" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student63">21PA1A04I9</label>
+            <input type="checkbox" id="4I9" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student64">22PA5A0418</label>
+            <input type="checkbox" id="LE:18" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student65">22PA5A0419</label>
+            <input type="checkbox" id="LE:19" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student66">22PA5A0420</label>
+            <input type="checkbox" id="LE:20" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student67">22PA5A0421</label>
+            <input type="checkbox" id="LE:21" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student68">22PA5A0422</label>
+            <input type="checkbox" id="LE:22" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student69">22PA5A0423</label>
+            <input type="checkbox" id="LE:23" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student70">22PA5A0424</label>
+            <input type="checkbox" id="LE:24" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student71">22PA5A0425</label>
+            <input type="checkbox" id="LE:25" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student72">22PA5A0426</label>
+            <input type="checkbox" id="LE:26" class="attendance-checkbox">
+        </div>
+        <div class="student">
+            <label for="student73">22PA5A0427</label>
+            <input type="checkbox" id="LE:27" class="attendance-checkbox">
+        </div>
+        <button id="submit-button">Submit</button>
+        <button id="edit-button">Edit</button>
+        <div id="absent-list"></div>
+    </div>
+    
+
+    <script>
+        const submitButton = document.getElementById("submit-button");
+        const editButton = document.getElementById("edit-button");
+        const checkboxes = document.querySelectorAll(".attendance-checkbox");
+
+        submitButton.addEventListener("click", function() {
+            const absentList = document.getElementById("absent-list");
+            absentList.innerHTML = ""; // Clear previous absentees
+
+            const absentStudents = [];
+            const presentStudents = [];
+
+            checkboxes.forEach(function(checkbox) {
+                if (!checkbox.checked) {
+                    const studentName = checkbox.getAttribute("id");
+                    absentStudents.push(studentName);
+                } else {
+                    const studentName = checkbox.getAttribute("id");
+                    presentStudents.push(studentName);
+                }
+            });
+
+            if (absentStudents.length === 0) {
+                absentList.innerHTML = "All students are present.";
+            } else {
+                absentList.innerHTML = "Absent Students:";
+                absentStudents.forEach(function(studentName, index) {
+                    const absentStudentDiv = document.createElement("div");
+                    absentStudentDiv.classList.add("absent-student");
+                    absentStudentDiv.textContent = `${index + 1}. ${studentName}`;
+                    absentList.appendChild(absentStudentDiv);
+                });
+            }
+
+            // Display counts
+            const absentCount = absentStudents.length;
+            const presentCount = presentStudents.length;
+            const absentCountElement = document.createElement("div");
+            absentCountElement.classList.add("absent-count");
+            absentCountElement.innerHTML = `Total Absent: ${absentCount}<br></br> Total Present: ${presentCount}`;
+            absentList.appendChild(absentCountElement);
+
+            checkboxes.forEach(function(checkbox) {
+                checkbox.disabled = true;
+            });
+            submitButton.disabled = true;
+        });
+
+        editButton.addEventListener("click", function() {
+            checkboxes.forEach(function(checkbox) {
+                checkbox.disabled = false;
+            });
+            submitButton.disabled = false;
+            document.getElementById("absent-list").innerHTML = "";
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+

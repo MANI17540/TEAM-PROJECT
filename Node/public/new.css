@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.laptop {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin: 1rem;
+    display: inline-block;
+    text-align: center;
+}
+
+.laptop img {
+    max-width: 25%;
+}
+
+.compareButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+#comparison {
+    margin-top: 3rem;
+}
+
+#comparison h2 {
+    margin-bottom: 1rem;
+}
+
+#selectedLaptops {
+    list-style: none;
+    padding: 0;
+}
+
+#selectedLaptops li {
+    margin-bottom: 0.5rem;
+}
